@@ -1,4 +1,4 @@
-# 🎯 Object-Oriented Programming in Java
+#  Object-Oriented Programming in Java
 
 ## 🌟 Introduction
 This project demonstrates **Object-Oriented Programming (OOP) in Java**!
