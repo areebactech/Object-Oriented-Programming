@@ -1,0 +1,19 @@
+# Ignore .idea directories
+.idea/
+
+# Ignore output directories
+out/
+
+# Ignore other compiled or class files
+*.class
+
+# Ignore specific project directories or files
+BankAccount/.idea/
+BankAccount/out/
+Banking-System/
+LibraryUser/.idea/
+Person/.idea/
+Person/out/
+func.class
+func.java
+oop/
