@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<VBox alignment="CENTER" prefHeight="400" prefWidth="400" spacing="15" style="-fx-background-color: #f0f0f0;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.todotask.HelloController">
+
+   <!-- Logo Image -->
+   <ImageView fx:id="logoImageView" fitHeight="40" fitWidth="40">
+      <image>
+         <Image url="@logo.png" />
+      </image>
+   </ImageView>
+
+   <!-- Welcome Label -->
+   <Label fx:id="welcomeLabel" style="-fx-font-size: 40px; -fx-font-weight: bold;" text="Welcome to To-Do App" textFill="#4ebaf8">
+      <font>
+         <Font size="18.0" />
+      </font></Label>
+
+   <!-- StackPane to hold both login and signup -->
+   <StackPane fx:id="formContainer">
+      <!-- Login Form -->
+      <VBox fx:id="loginForm" alignment="CENTER" spacing="15" visible="true">
+         <TextField fx:id="usernameField" maxWidth="250" prefHeight="43.0" prefWidth="250" promptText="Username" />
+         <PasswordField fx:id="passwordField" maxWidth="250" prefHeight="43.0" prefWidth="250" promptText="Password" />
+         <Button onAction="#showLogin" prefWidth="100" text="Login" />
+         <Button onAction="#showSignupPage" prefWidth="100" text="Signup" />
+      </VBox>
+
+      <!-- Signup Form -->
+      <VBox fx:id="signupForm" alignment="CENTER" spacing="15" visible="false">
+         <TextField fx:id="usernameFieldSignup" maxWidth="250" prefHeight="43.0" prefWidth="250" promptText="Username" />
+         <PasswordField fx:id="passwordFieldSignup" maxWidth="250" prefHeight="43.0" promptText="Password" />
+         <PasswordField fx:id="confirmPasswordField" maxWidth="250" prefHeight="43.0" prefWidth="250" promptText="Confirm Password" />
+         <Button onAction="#showSignUp" prefWidth="100" text="Sign Up" />
+         <Button onAction="#showLoginPage" prefWidth="100" text="Back" />
+      </VBox>
+   </StackPane>
+</VBox>
+

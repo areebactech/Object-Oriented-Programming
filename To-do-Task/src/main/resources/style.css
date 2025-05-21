@@ -1,0 +1,30 @@
+.root {
+    -fx-background-image: url("/login.jpg");
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+}
+.button {
+    -fx-background-color: #1e9be4;
+    -fx-text-fill: white;
+    -fx-background-radius: 20;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-padding: 8 16;
+    -fx-transition: background-color 0.7s ease, transform 0.8s ease;
+}
+
+.button:hover {
+    -fx-background-color: #50b8e6;
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+
+Text {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-fill: #1e9be4;
+}
+
+
+
